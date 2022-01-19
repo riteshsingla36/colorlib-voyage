@@ -116,7 +116,7 @@ h3 {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
-    .row {
+    .row1 {
         flex-direction: column ;
     }
 
@@ -127,7 +127,7 @@ h3 {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .row {
+    .row1 {
         flex-direction: column;
     }
 
@@ -138,7 +138,7 @@ h3 {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .row {
+    .row1 {
         flex-direction: row;
     }
 

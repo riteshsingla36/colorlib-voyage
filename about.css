@@ -17,6 +17,7 @@
     grid-template-columns: 50% 50%;
     justify-content: center;
     align-items: center;
+    background-color: #FAFBFB;
 }
 
 .pool-main .pool {
@@ -89,7 +90,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding-left: 30px; */
+    padding: 30px;
 }
 
 .first h3 {
@@ -97,7 +98,8 @@
 }
 
 .second .content h3 {
-    font-weight: 500;
+    font-weight: 400;
+    font-size: xx-large;
 }
 
 
@@ -109,6 +111,16 @@
     justify-content: flex-end;
     padding: 10px;
 
+}
+
+.recommended .images .image .content h3 {
+    font-weight: normal;
+    font-size: x-large;
+}
+
+.recommended .images .image .content .stars {
+    font-weight: normal;
+    font-size: small;
 }
 
 .recommended .images .image:hover {
@@ -124,8 +136,6 @@
     color: silver;
     margin: 0;
 }
-
-
 
 
 .second .images .image {
