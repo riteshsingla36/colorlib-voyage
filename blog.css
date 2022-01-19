@@ -45,13 +45,13 @@ img{
 
 .paragraph p:hover{
 
-color: rgb(194, 78, 78);
+color: #d45e5e;
 cursor: pointer;
 
 }
 
 .readme a:first-child{
-    color: rgb(194, 78, 78);
+    color: #ffc3c3;
     text-decoration: none;
 }
 
@@ -74,17 +74,39 @@ cursor: pointer;
     
 }
 #fgole{
-    background-color: rgb(226, 69, 69);
-    color: white;
+    background-color: #ff5f5f;
+    color:#24262b;
     padding-left: 1.6%;
     padding-right: 1.6%;
 }
 
 
-/* meida qureis */
 
+.gole  div:hover{
+    
+    color: #24262b;
+  
+    background-color:#ff5f5f;
+    cursor: pointer;
+}
 
+/*  */
+@media screen and (max-width: 768px){
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
+}
 
+/* for tablet */
+@media screen and (min-width: 768px){
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-
+@media screen and (min-width: 980px){
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
