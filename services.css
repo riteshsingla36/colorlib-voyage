@@ -1,0 +1,153 @@
+* {
+    letter-spacing: 0.05rem;
+}
+
+.row1 .promo .text {
+    margin-top: 10px;
+}
+
+.text h2,
+h3 {
+    font-size:medium;
+    font-weight: 500;
+}
+
+.text h3 span {
+    color: grey;
+}
+
+.row1 .promo .text .read {
+    text-decoration: none;
+    color: red;
+    font-size: x-small;
+    font-weight: normal;
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 70px;
+    margin-top: 80px;
+    /* width: 90%; */
+}
+
+.media {
+    border: 1px solid brown;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.promo .promo-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.bg-light {
+    background-color: #FAFBFB;
+    margin: 90px 0px;
+    padding-top: 40px;
+}
+
+
+.rows {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    width: 70%;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.rows .rows-inner .d-flex {
+    padding: 15px;
+    width: fit-content;
+    margin: auto;
+}
+
+.rows .rows-inner .d-flex .icon {
+    border-radius: 50%;
+    padding: 15px;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.our_services {
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 150px;
+}
+
+.our_services h2 {
+    font-weight: 500;
+}
+
+.text-body .heading {
+    font-size: large;
+    font-weight: normal;
+}
+
+.text-body p {
+    color: grey;
+}
+
+.header img {
+    width: 100%;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    .row {
+        flex-direction: column ;
+    }
+
+    .rows {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .rows {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .row {
+        flex-direction: row;
+    }
+
+    .rows {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

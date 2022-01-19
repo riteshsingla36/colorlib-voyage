@@ -8,6 +8,7 @@
 
 .upper img {
     width: 100%;
+    
 }
 
 
@@ -106,6 +107,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding: 10px;
 
 }
 
@@ -131,6 +133,7 @@
     height: 33%;
     color: white;
     background-size: 100% 100%;
+    background-position: center;
     /* background-color: green; */
 }
 
@@ -174,6 +177,11 @@
     padding: 20px;
 }
 
+input[type=text] {
+    border: 1px solid silver;
+    
+}
+
 .btn {
     height: 400px;
     width: 100%;
@@ -192,16 +200,17 @@
 
 }
 
-.b1:hover {
-    background-position: 0 -150px;
+.image:hover .b1 {
+    background-position: 0 -180px;
+
 }
 
-.b2:hover {
-    background-position: 0 -150px;
+.image:hover .b2 {
+    background-position: 0 -180px;
 }
 
-.b3:hover {
-    background-position: 0 -150px;
+.image:hover .b3 {
+    background-position: 0 -180px;
 }
 
 .satisfied {
@@ -315,6 +324,8 @@
     .recommended .first .email {
         width: 100%;
     }
+
+
 
     input {
         width: 100%;
