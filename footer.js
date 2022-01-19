@@ -1,6 +1,6 @@
 document.write(
-
-    <footer class="footer">
+ 
+   ` <footer class="footer">
 
     <div class="container">
      
@@ -97,7 +97,7 @@ document.write(
 
     </div>
 
-  </footer>
-
+  </footer>`
+  
 
 )
