@@ -5,6 +5,11 @@
 }
 .container{
     margin: 10% 11%;
+    
+}
+
+.top img {
+    width: 100%;
 }
 
 
@@ -38,6 +43,10 @@
      padding: 10px;
      color: #131111;
     
+}
+
+#map {
+    margin-bottom: 80px;
 }
 
 
