@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    margin: 10% 11%;
+}
+
+
+.contacts{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 20px;
+    /* border: 2px solid #ff5f5f ; */
+    padding-bottom: 10px;
+    
+}
+
+.leftinfo{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5px;
+      margin-top: 15px;
+      /* box-sizing: border-box; */
+      padding-left: 10px;
+     
+      
+}
+.contact{
+      height: 60px;
+      /* width: 545.5px; */
+      width: 100%;
+      box-sizing: border-box;
+      /* border: 2px solid #6b6060 ; */
+      margin-top: 15px;
+      font-size: 28px;
+     padding: 10px;
+     color: #131111;
+    
+}
+
+
+
+
+
+
+.phone,.email,.website{
+    height: 80px;
+    /* width: 545.5px; */
+    width: 100%;
+    margin-top: 10px;
+   box-sizing: border-box;
+   padding-left: 10px;
+   font-size: 17px;
+   border: 1px solid #ad9797 ;
+   text-decoration: none;
+   padding:30px;
+   color: #808080;
+   font-weight: 500;
+}
+.addres{
+    height: 80px;
+    /* width: 545.5px; */
+    width: 100%;
+    margin-top: 10px;
+   box-sizing: border-box;
+   /* padding-left: 10px; */
+   font-size: 17px;
+   border: 1px solid #ad9797 ;
+   text-decoration: none;
+   /* padding:30px; */
+   color: #808080;
+   font-weight: 500;
+   padding: 20px;
+
+}
+
+
+
+
+
+.rightinfo{
+     margin-top: 15px;
+      box-sizing: border-box;
+     
+}
+
+
+/* form{
+    margin: 40px;
+} */
+.input-feld{
+       height: 55px;
+      width: 100%;
+       margin-top: 10px;
+      box-sizing: border-box;
+      padding-left: 10px;
+      font-size: 15px;
+      color: #808080;
+}
+textarea{
+    margin-top: 15px;
+    width: 100%; 
+    font-size: 17px;
+   padding: 10px;
+   color: #808080;
+   border: 1px solid #808080 ;
+   
+}
+
+
+button{
+    height: 60px;
+    width: 215px;
+    cursor: pointer;
+    background-color: #ff5f5f;
+    font-size: 15px;
+    color: white;
+    border: 1px solid #ff5f5f ;
+    margin-top: 15px;
+}
+button:hover{
+
+    background-color: white;
+    color:#ff5f5f;
+}
+a{
+    color: rgb(219, 75, 75);
+    text-decoration: none;
+}
+
+
+/* meida qureis */
+
+
+/* for mobile */
+@media only  screen and (max-width:600px) {
+    .contacts{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .leftinfo{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container{
+        margin: auto;
+    }
+    .rightinfo{
+       box-sizing: border-box;
+       /* margin: 15px; */
+       padding: 20px;
+    }
+  
+}
+
+/* 
+ #map{
+    margin: 5% 10%;
+} */
+#map{
+    
+}
+iframe{
+    width: 100%;
+    margin-top: 70px;
+    
+    height: 400px;
+   
+} 
