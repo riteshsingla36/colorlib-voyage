@@ -89,6 +89,13 @@ body,html{
         height:450px;
         margin-left: 70%;
       }
+
+      .sidebar-2-inner {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      
       .h5{
         font-size: 20px;
         font-weight: 100;
@@ -116,6 +123,28 @@ body,html{
         height:450px;
         margin-left: 70%;
       }
+
+
+      .sidebar-3 button {
+        background-color: transparent;
+        border-radius: .25em;
+        padding: 5px 8px;
+        border: 1px solid silver;
+        color: slategray;
+        text-transform: uppercase;
+        margin: 3px 2px; 
+      }
+    
+      .h51 {
+        font-weight: 500;
+      }
+    
+      .para {
+        color: slategray;
+        letter-spacing: .02em;
+      }
+
+
       .sidebar-4{
         position: absolute;
         top:2000px;
