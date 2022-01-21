@@ -3,7 +3,7 @@ body,html{
     margin: 0;
   }
   .head{
-    background-image: url("hotelimg/hotel-1.webp");
+    background-image: url("./images/hotelimg/hotel-1.webp");
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
@@ -237,4 +237,42 @@ body,html{
         top:2000px;
         height:450px;
         margin-left: 70%;
-      }    
+      }  
+      
+      .circle{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8%;
+        gap: 3px;
+    }
+    .circle >div{
+          border:1px #cccccc solid;  
+        border-radius: 50%;
+        color:red;
+        padding: 1%;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        
+    }
+    #o-shape{
+        background-color: #ff5f5f;
+        color:#24262b;
+        padding-left: 1.6%;
+        padding-right: 1.6%;
+    }
+    .circle  div:hover{
+        
+        color: #24262b;
+      
+        background-color:#ff5f5f;
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width: 768px) and (orientation: portrait){
+    }
+    @media screen and (min-width: 768px) and (orientation: portrait){
+  
+    }
+    @media screen and (min-width: 980px){
+      
+    }
