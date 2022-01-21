@@ -20,14 +20,87 @@ body,html{
     .images-grid{
         display: grid;
         grid-template-columns: repeat(2,425px);
-        margin-left: 5%;
+        gap: 10px;
+        /* margin-left: 5%; */
         padding: 8%;
     }
-    img{
+
+
+
+    .image {
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: white;
+      position: relative;
+      /* padding-left:10px; */
+    }
+
+    .image .content {
+      position: absolute;
+      bottom: 0;
+      padding:10px
+    }
+
+    .image .content h4 {
+      font-size: large;
+      font-weight: normal;
+    }
+
+    .image .content .stars {
+      font-size: small;
+      /* color: blue; */
+    }
+
+    .images-grid .image .content p {
+      color: silver;
+      margin: 0;
+      font-size: small;
+  }
+
+    .images-grid .image:hover {
+      color: black;
+  }
+  
+  .btn {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+
+}
+
+.b1 {
+    background: -webkit-linear-gradient(transparent 50%, white 50%);
+    background-size: 100% 800px;
+
+}
+
+.image:hover .b1 {
+    background-position: 0 -180px;
+
+}
+
+
+
+
+    .im-1{
         width:380px;
         height:350px;
         margin: 2% 2%;
+        background-size: 100% 100%;
+        background-position: center;
     } 
+
+
+
+
+
+
+
     .sidebar-1{
         position: absolute;
         top:900px;
@@ -72,17 +145,31 @@ body,html{
         height: 50px;
       }
       .flights{
-      margin: 20px 20px;
+      margin: 20px;
       background-color: rgba(245, 53, 53, 0.781);
       color:white;
-      height: 35px;
+      height: fit-content;
       width: 250px;
       text-align: center;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: large;
-      font-weight: 400;
-      padding: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+      
       }
+
+      .flights h3 {
+        font-weight: normal;
+      }
+
+      .flights:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border: 1px solid rgba(245, 53, 53, 0.781);;
+      }
+
+
+
       .sidebar-2{
         position: absolute;
         top:1400px;
