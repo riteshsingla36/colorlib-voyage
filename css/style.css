@@ -60,7 +60,7 @@
     content: '\e09b'
 }
 
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 
 .animated {
     -webkit-animation-duration: 1s;
@@ -2573,6 +2573,11 @@
     position: relative
 }
 
+.nav-slider-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative
+}
+
 .owl-carousel {
     display: none;
     width: 100%;
@@ -4210,6 +4215,14 @@ a>code {
     margin-left: auto
 }
 
+.display_none {
+    display: none !important
+}
+
+.display_block {
+    display: block !important
+}
+
 @media (min-width:576px) {
     .container {
         max-width: 540px
@@ -4248,6 +4261,16 @@ a>code {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.row_nooverflow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: none;
+    width: 100%;
     margin-right: -15px;
     margin-left: -15px
 }
@@ -6301,6 +6324,10 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 .promo .text h2 {
     font-size: 20px;
     font-weight: 600
+}
+
+.overflow_hidden {
+    overflow: hidden
 }
 
 .promo .text .price {
