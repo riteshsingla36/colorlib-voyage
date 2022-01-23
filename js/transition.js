@@ -1,5 +1,6 @@
 var navtag = document.getElementsByTagName("nav")[0];
 var nav_height = navtag.offsetHeight;
+console.log(nav_height);
 
 function change_display(elements, dot) {
     var ele_length = elements.length;
@@ -31,12 +32,15 @@ function navbartransition() {
 }
 
 window.onscroll = function () {
-    // get scroll position
     var scroll = window.scrollY;
-    if (scroll > nav_height) {
-        navtag.classList.add("nav-slider");
+    if (parseInt(scroll) > parseInt(nav_height)) {
+        navtag.classList.add("scrolled");
+        navtag.classList.add("awake");
     } else {
-        navtag.classList.remove("nav-slider");
+        try {
+            navtag.classList.remove("scrolled");
+        }
+        catch (err) { }
     }
 }
 

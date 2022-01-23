@@ -3,7 +3,7 @@ body,html {
   margin: 0;
 }
 .head {
-  background-image: url("./images/toursimg/Tours-1.webp");
+  background-image: url("../images/toursimg/Tours-1.webp");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;

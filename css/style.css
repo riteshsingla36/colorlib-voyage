@@ -4937,10 +4937,15 @@ a.btn.disabled, fieldset:disabled a.btn {
     cursor: pointer
 }
 
-@media (max-width:991.98px) {
+@media (max-width: 991.98px) {
     .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
         padding-right: 0;
         padding-left: 0
+    }
+    .ftco-navbar-light {
+        background: #000!important;
+        top: 0;
+        position: relative;
     }
 }
 
