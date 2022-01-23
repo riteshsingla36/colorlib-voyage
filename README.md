@@ -1,13 +1,16 @@
 # Colorlib Voyage
 
-# Yashasvi
+This repo is a portfolio project of the work done as part of construct week in masai school
 
-* Tours
-* Hotels
+## Work Division
 
-Navbar needs to be implemented
+The project work has been divided in the following order
 
-# Ritesh
+* Yashasvi - Tours, Hotels
+* Ritesh - About, Services
+* Anand - Home, Navbar and carousel
+* Anil - Blog, Contact, Footer
 
-* about 
-* services
+## Viewing
+
+This project has been hosted on github pages and is available online at [This Link](https://riteshsingla36.github.io/colorlib-voyage/)
