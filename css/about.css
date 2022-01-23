@@ -141,20 +141,20 @@
 
 .image-1 {
   background-color: hotpink;
-  background-image: url(./images/about/trees.webp);
+  background-image: url(../images/about/trees.webp);
 
   position: relative;
 }
 
 .image-2 {
   background-color: indigo;
-  background-image: url(./images/about/hotel.webp);
+  background-image: url(../images/about/hotel.webp);
   position: relative;
 }
 
 .image-3 {
   background-color: lemonchiffon;
-  background-image: url(./images/about/old_building.webp);
+  background-image: url(../images/about/old_building.webp);
   position: relative;
 }
 

@@ -1,6 +1,6 @@
 # Colorlib Voyage
 
-This repo is a portfolio project of the work done as part of construct week in masai school
+This repo is a portfolio project of the work done as part of construct week in masai school. This project aims to clone [This Website](https://preview.colorlib.com/theme/voyage/)
 
 ## Work Division
 
