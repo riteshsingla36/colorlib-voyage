@@ -15,6 +15,7 @@
         src="https://maps.googleapis.com/maps-api-v3/api/js/47/6/common.js"></script>
     <script type="text/javascript" charset="UTF-8"
         src="https://maps.googleapis.com/maps-api-v3/api/js/47/6/util.js"></script>
+    <link rel="stylesheet" href="css/test.css">
 </head>
 
 <body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0" cz-shortcut-listen="true">
@@ -40,11 +41,10 @@
         </div>
     </nav>
     <section class="home-slider owl-carousel owl-loaded owl-drag">
-        <div class="owl-stage-outer">
-            <div class="owl-stage"
-                style="transform: translate3d(px, 0px, 0px); transition: all 0s ease 0s; width: 100%">
+        <div class="owl-stage-outer overflow_hidden">
+            <div class="owl-stage slider-container-transition" id="slider-container" style='display: flex; flex-wrap: nowrap;flex-direction: row;'>
                 <!-- item 1 -->
-                <div class="owl-item cloned" style="width: inherit;">
+                <div class="nav-slider-item display_block" style="width: 100%;  display: block;">
                     <div class="slider-item"
                         style="background-image:url(images/index/xbg_1.jpg.pagespeed.ic.GQT90DL5zP.webp)">
                         <div class="overlay"></div>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <!-- item 2 -->
-                <div class="owl-item cloned" style="width: inherit;">
+                <div class="nav-slider-item display_none" style="width: 100%;">
                     <div class="slider-item"
                         style="background-image:url(images/index/xbg_3.jpg.pagespeed.ic.1WzoLtYoHK.webp)">
                         <div class="overlay"></div>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <!-- item 3 -->
-                <div class="owl-item" style="width: inherit;">
+                <div class="nav-slider-item display_none" style="width: 100%;">
                     <div class="slider-item"
                         style="background-image:url(images/index/xbg_4.jpg.pagespeed.ic.hL7UeRF6vC.webp)">
                         <div class="overlay"></div>
@@ -80,60 +80,6 @@
                             <div class="row slider-text align-items-center">
                                 <div class="col-md-7 col-sm-12 ftco-animate fadeInUp ftco-animated">
                                     <h1 class="mb-3">Experience the best trip ever</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- item 4 -->
-                <div class="owl-item" style="width: inherit;">
-                    <div class="slider-item"
-                        style="background-image:url(images/index/xbg_1.jpg.pagespeed.ic.GQT90DL5zP.webp)">
-                        <div class="overlay"></div>
-                        <div class="container">
-                            <div class="row slider-text align-items-center">
-                                <div class="col-md-7 col-sm-12 ftco-animate fadeInUp ftco-animated">
-                                    <h1 class="mb-3">Making the most out of your holiday</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- item 5 -->
-                <div class="owl-item active" style="width: inherit;">
-                    <div class="slider-item"
-                        style="background-image:url(images/index/xbg_3.jpg.pagespeed.ic.1WzoLtYoHK.webp)">
-                        <div class="overlay"></div>
-                        <div class="container">
-                            <div class="row slider-text align-items-center">
-                                <div class="col-md-7 col-sm-12 ftco-animate fadeInUp ftco-animated">
-                                    <h1 class="mb-3">Travel Operator Just For You haha</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-item active" style="width: inherit;">
-                    <div class="slider-item"
-                        style="background-image:url(images/index/xbg_4.jpg.pagespeed.ic.hL7UeRF6vC.webp)">
-                        <div class="overlay"></div>
-                        <div class="container">
-                            <div class="row slider-text align-items-center">
-                                <div class="col-md-7 col-sm-12 ftco-animate fadeInUp ftco-animated">
-                                    <h1 class="mb-3">Experience the best trip ever</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-item active" style="width: inherit">
-                    <div class="slider-item"
-                        style="background-image:url(images/index/xbg_1.jpg.pagespeed.ic.GQT90DL5zP.webp)">
-                        <div class="overlay"></div>
-                        <div class="container">
-                            <div class="row slider-text align-items-center">
-                                <div class="col-md-7 col-sm-12 ftco-animate fadeInUp ftco-animated">
-                                    <h1 class="mb-3">Making the most out of your holiday</h1>
                                 </div>
                             </div>
                         </div>
@@ -144,8 +90,11 @@
         <div class="owl-nav"><button role="presentation" class="owl-prev"><span
                     class="ion-ios-arrow-back"></span></button><button role="presentation" class="owl-next"><span
                     class="ion-ios-arrow-forward"></span></button></div>
-        <div class="owl-dots"><button class="owl-dot"><span></span></button><button
-                class="owl-dot"><span></span></button><button class="owl-dot active"><span></span></button></div>
+        <div class="owl-dots" id='navdots'>
+            <!-- <button class="owl-dot active"><span></span></button>
+            <button class="owl-dot"><span></span></button>
+            <button class="owl-dot"><span></span></button> -->
+        </div>
     </section>
     <div class="ftco-section-search">
         <div class="container">
@@ -1093,26 +1042,27 @@
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
                 stroke="#F96D00"></circle>
         </svg></div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/pagespeed.js"></script>
-    <script>eval(mod_pagespeed_y9pHS2Q937);</script>
-    <script>eval(mod_pagespeed_m4KHO$w8O5);</script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="js/pagespeed.js"></script> -->
+    <!-- <script>eval(mod_pagespeed_y9pHS2Q937);</script> -->
+    <!-- <script>eval(mod_pagespeed_m4KHO$w8O5);</script>
     <script>eval(mod_pagespeed_oYYjJMI05G);</script>
-    <script>eval(mod_pagespeed_8XgBL2uv7B);</script>
+    <script>eval(mod_pagespeed_8XgBL2uv7B);</script> -->
     <!--    <script src="https://preview.colorlib.com/theme/voyage/js/jquery.waypoints.min.js+jquery.stellar.min.js+owl.carousel.min.js+jquery.magnific-popup.min.js.pagespeed.jc.BjiD7SKFP2.js"></script>-->
-    <script>eval(mod_pagespeed_Wa_X$gT9Ry);</script>
+    <!-- <script>eval(mod_pagespeed_Wa_X$gT9Ry);</script>
     <script>eval(mod_pagespeed_BtaQNYBd6S);</script>
     <script>eval(mod_pagespeed_tEW_MPFsQq);</script>
-    <script>eval(mod_pagespeed_n9e3V5jfhw);</script>
+    <script>eval(mod_pagespeed_n9e3V5jfhw);</script> -->
     <!--    <script src="https://preview.colorlib.com/theme/voyage/js/aos.js+jquery.animateNumber.min.js+bootstrap-datepicker.js+jquery.timepicker.min.js+google-map.js+main.js.pagespeed.jc.WZ9l6sxzP4.js"></script>-->
-    <script>eval(mod_pagespeed_t_O49LI6Iw);</script>
+    <!-- <script>eval(mod_pagespeed_t_O49LI6Iw);</script>
     <script>eval(mod_pagespeed_QFxLMSBRfk);</script>
     <script>eval(mod_pagespeed_6VcLxaywug);</script>
-    <script>eval(mod_pagespeed_T2Jfre4OiM);</script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
-    <script>eval(mod_pagespeed_UlTj5GaEeD);</script>
-    <script>eval(mod_pagespeed_y04Kp_uXy_);</script>
+    <script>eval(mod_pagespeed_T2Jfre4OiM);</script> -->
+    <!-- <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script> -->
+    <!-- <script>eval(mod_pagespeed_UlTj5GaEeD);</script>
+    <script>eval(mod_pagespeed_y04Kp_uXy_);</script> -->
+    <script src="js/transition.js"></script>
 </body>
 
 </html>
