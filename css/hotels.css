@@ -92,8 +92,8 @@ html {
 }
 
 .sidebar-1 {
-  /* position: absolute; */
-  /* top: 900px; */
+  position: absolute;
+  top: 900px;
   height: 450px;
   margin-left: 70%;
   width: 300px;
@@ -166,8 +166,8 @@ html {
 }
 
 .sidebar-2 {
-  /* position: absolute; */
-  /* top: 1400px; */
+  position: absolute;
+  top: 1400px;
   height: 450px;
   margin-left: 70%;
 }
@@ -202,8 +202,8 @@ html {
 }
 
 .sidebar-3 {
-  /* position: absolute; */
-  /* top: 1800px; */
+  position: absolute;
+  top: 1800px;
   height: 450px;
   margin-left: 70%;
 }
@@ -228,8 +228,8 @@ html {
 }
 
 .sidebar-4 {
-  /* position: absolute; */
-  /* top: 2000px; */
+  position: absolute;
+  top: 2000px;
   height: 450px;
   margin-left: 70%;
 }
