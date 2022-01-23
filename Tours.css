@@ -1,5 +1,4 @@
-body,
-html {
+body,html {
   height: 96%;
   margin: 0;
 }
@@ -235,8 +234,50 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  .h1{
+    font-size: 50px;
+    position: absolute;
+  top:100px;
+  left: 100px;
+  }
+  .sidebar-1{
+    display:contents;
+  }
+  .sidebar-2{
+    display:contents;
+  }
+  .sidebar-3{
+    display: contents;
+  }
+  .sidebar-4{
+    display: contents;
+  }
+  .sidebar-2-inner{
+    display:contents;
+  }
 }
 @media screen and (min-width: 768px) {
+  .sidebar-1{
+    display:contents;
+  }
+  .sidebar-2{
+    display:contents;
+  }
+  .sidebar-3{
+    display: contents;
+  }
+  .sidebar-4{
+    display: contents;
+  }
+  .sidebar-2-inner{
+    display:contents;
+  }
 }
 @media screen and (min-width: 980px) {
+  .h1{
+    font-size: 60px;
+    position: absolute;
+     top:320px;
+     left: 200px;
+  }
 }
