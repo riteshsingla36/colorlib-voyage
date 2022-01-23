@@ -1,278 +1,255 @@
-body,html{
-    height: 96%;
-    margin: 0;
-  }
-  .head{
-    background-image: url("./images/hotelimg/hotel-1.webp");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
-    .h1{
-        color: white;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 80px;
-        position: absolute;
-        bottom: 330px;
-        left: 200px;
-    }
-    .images-grid{
-        display: grid;
-        grid-template-columns: repeat(2,425px);
-        gap: 10px;
-        /* margin-left: 5%; */
-        padding: 8%;
-    }
+body,
+html {
+  height: 96%;
+  margin: 0;
+}
+.head {
+  background-image: url("./images/hotelimg/hotel-1.webp");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.h1 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 80px;
+  position: absolute;
+  bottom: 330px;
+  left: 200px;
+}
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 425px);
+  gap: 10px;
+  /* margin-left: 5%; */
+  padding: 8%;
+}
 
+.image {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  position: relative;
+  /* padding-left:10px; */
+}
 
+.image .content {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
 
-    .image {
-      background: transparent;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      color: white;
-      position: relative;
-      /* padding-left:10px; */
-    }
+.image .content h4 {
+  font-size: large;
+  font-weight: normal;
+}
 
-    .image .content {
-      position: absolute;
-      bottom: 0;
-      padding:10px
-    }
+.image .content .stars {
+  font-size: small;
+  /* color: blue; */
+}
 
-    .image .content h4 {
-      font-size: large;
-      font-weight: normal;
-    }
+.images-grid .image .content p {
+  color: silver;
+  margin: 0;
+  font-size: small;
+}
 
-    .image .content .stars {
-      font-size: small;
-      /* color: blue; */
-    }
+.images-grid .image:hover {
+  color: black;
+}
 
-    .images-grid .image .content p {
-      color: silver;
-      margin: 0;
-      font-size: small;
-  }
-
-    .images-grid .image:hover {
-      color: black;
-  }
-  
-  .btn {
-    height: 350px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s;
-
+.btn {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
 }
 
 .b1 {
-    background: -webkit-linear-gradient(transparent 50%, white 50%);
-    background-size: 100% 800px;
-
+  background: -webkit-linear-gradient(transparent 50%, white 50%);
+  background-size: 100% 800px;
 }
 
 .image:hover .b1 {
-    background-position: 0 -180px;
-
+  background-position: 0 -180px;
 }
 
+.im-1 {
+  width: 380px;
+  height: 350px;
+  margin: 2% 2%;
+  background-size: 100% 100%;
+  background-position: center;
+}
 
+.sidebar-1 {
+  position: absolute;
+  top: 900px;
+  height: 450px;
+  margin-left: 70%;
+  width: 300px;
+  background-color: rgba(243, 239, 239, 0.788);
+}
+.h3 {
+  padding-left: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+}
+.boxes {
+  padding-right: 150px;
+}
+.search {
+  margin: 20px 20px;
+  border: 2px solid rgba(243, 239, 239, 0.788);
+}
+.check-out {
+  margin: 20px 20px;
+  border: 2px solid rgba(243, 239, 239, 0.788);
+}
+.check-in {
+  margin: 20px 20px;
+  border: 2px solid rgba(243, 239, 239, 0.788);
+}
+.select {
+  width: 200px;
+  margin: 20px 20px;
+  border: 2px solid rgba(243, 239, 239, 0.788);
+}
 
+.form-control {
+  height: 40px;
+  width: 250px;
+}
+#gest {
+  width: 260px;
+  height: 50px;
+}
+.flights {
+  margin: 20px;
+  background-color: rgba(245, 53, 53, 0.781);
+  color: white;
+  height: fit-content;
+  width: 250px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
-    .im-1{
-        width:380px;
-        height:350px;
-        margin: 2% 2%;
-        background-size: 100% 100%;
-        background-position: center;
-    } 
+.flights h3 {
+  font-weight: normal;
+}
 
+.flights:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(245, 53, 53, 0.781);
+}
 
+.sidebar-2 {
+  position: absolute;
+  top: 1400px;
+  height: 450px;
+  margin-left: 70%;
+}
 
+.sidebar-2-inner {
+  display: flex;
+  justify-content: space-between;
+}
 
+.h5 {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.red {
+  color: rgb(247, 84, 84);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.num {
+  color: rgb(177, 169, 169);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
 
+.hori {
+  color: rgba(255, 255, 255, 0.281);
+  width: 200px;
+}
+.sidebar-3 {
+  position: absolute;
+  top: 1800px;
+  height: 450px;
+  margin-left: 70%;
+}
 
+.sidebar-3 button {
+  background-color: transparent;
+  border-radius: 0.25em;
+  padding: 5px 8px;
+  border: 1px solid silver;
+  color: slategray;
+  text-transform: uppercase;
+  margin: 3px 2px;
+}
 
-    .sidebar-1{
-        position: absolute;
-        top:900px;
-        height:450px;
-        margin-left: 70%;
-        width:300px;
-        background-color: rgba(243, 239, 239, 0.788);
-      }
-      .h3{
-        padding-left: 20px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 100;
-        font-size: 30px;
-      }
-      .boxes{
-        padding-right: 150px;
-      }
-      .search{
-        margin: 20px 20px;
-        border:2px solid rgba(243, 239, 239, 0.788);
-      }
-      .check-out{
-        margin: 20px 20px;
-        border:2px solid rgba(243, 239, 239, 0.788);
-      }
-      .check-in{
-        margin: 20px 20px;
-        border:2px solid rgba(243, 239, 239, 0.788);
-      }
-      .select{
-      width:200px;
-      margin: 20px 20px;
-      border:2px solid rgba(243, 239, 239, 0.788);
-      }
-    
-      .form-control{
-        height: 40px;
-        width: 250px;
-      }
-      #gest{
-        width:260px;
-        height: 50px;
-      }
-      .flights{
-      margin: 20px;
-      background-color: rgba(245, 53, 53, 0.781);
-      color:white;
-      height: fit-content;
-      width: 250px;
-      text-align: center;
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 10px;
-      box-sizing: border-box;
-      
-      }
+.h51 {
+  font-weight: 500;
+}
 
-      .flights h3 {
-        font-weight: normal;
-      }
+.para {
+  color: slategray;
+  letter-spacing: 0.02em;
+}
 
-      .flights:hover {
-        cursor: pointer;
-        background-color: white;
-        color: black;
-        border: 1px solid rgba(245, 53, 53, 0.781);;
-      }
+.sidebar-4 {
+  position: absolute;
+  top: 2000px;
+  height: 450px;
+  margin-left: 70%;
+}
 
+.circle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8%;
+  gap: 3px;
+}
+.circle > div {
+  border: 1px #cccccc solid;
+  border-radius: 50%;
+  color: red;
+  padding: 1%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+#o-shape {
+  background-color: #ff5f5f;
+  color: #24262b;
+  padding-left: 1.6%;
+  padding-right: 1.6%;
+}
+.circle div:hover {
+  color: #24262b;
 
+  background-color: #ff5f5f;
+  cursor: pointer;
+}
 
-      .sidebar-2{
-        position: absolute;
-        top:1400px;
-        height:450px;
-        margin-left: 70%;
-      }
-
-      .sidebar-2-inner {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      
-      .h5{
-        font-size: 20px;
-        font-weight: 100;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-      }
-      .red{
-        color:rgb(247, 84, 84);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 15px;
-        font-weight: lighter;
-      }
-      .num{
-        color: rgb(177, 169, 169);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 15px;
-      }
-    
-      .hori{
-        color: rgba(255, 255, 255, 0.281);
-        width:200px;
-      }
-      .sidebar-3{
-        position: absolute;
-        top:1800px;
-        height:450px;
-        margin-left: 70%;
-      }
-
-
-      .sidebar-3 button {
-        background-color: transparent;
-        border-radius: .25em;
-        padding: 5px 8px;
-        border: 1px solid silver;
-        color: slategray;
-        text-transform: uppercase;
-        margin: 3px 2px; 
-      }
-    
-      .h51 {
-        font-weight: 500;
-      }
-    
-      .para {
-        color: slategray;
-        letter-spacing: .02em;
-      }
-
-
-      .sidebar-4{
-        position: absolute;
-        top:2000px;
-        height:450px;
-        margin-left: 70%;
-      }  
-      
-      .circle{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 8%;
-        gap: 3px;
-    }
-    .circle >div{
-          border:1px #cccccc solid;  
-        border-radius: 50%;
-        color:red;
-        padding: 1%;
-        padding-left: 1.5%;
-        padding-right: 1.5%;
-        
-    }
-    #o-shape{
-        background-color: #ff5f5f;
-        color:#24262b;
-        padding-left: 1.6%;
-        padding-right: 1.6%;
-    }
-    .circle  div:hover{
-        
-        color: #24262b;
-      
-        background-color:#ff5f5f;
-        cursor: pointer;
-    }
-    
-    @media screen and (max-width: 768px) and (orientation: portrait){
-    }
-    @media screen and (min-width: 768px) and (orientation: portrait){
-  
-    }
-    @media screen and (min-width: 980px){
-      
-    }
+@media screen and (max-width: 768px) and (orientation: portrait) {
+}
+@media screen and (min-width: 768px) and (orientation: portrait) {
+}
+@media screen and (min-width: 980px) {
+}
