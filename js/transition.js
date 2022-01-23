@@ -1,3 +1,6 @@
+var navtag = document.getElementsByTagName("nav")[0];
+var nav_height = navtag.offsetHeight;
+
 function change_display(elements, dot) {
     var ele_length = elements.length;
     for (var i = 0; i <= ele_length; i++) {
@@ -18,13 +21,23 @@ function navbartransition() {
     var x = document.getElementsByClassName("nav-slider-item");
     var y = document.getElementsByClassName("owl-dots")[0];
     var owldot_template = '<button class="owl-dot"><span></span></button>'
-    for(var i = 0; i < x.length; i++) {
+    for (var i = 0; i < x.length; i++) {
         y.innerHTML += owldot_template;
     }
     var dot = document.getElementsByClassName("owl-dot");
     setInterval(function () {
         change_display(x, dot);
     }, 3000);
+}
+
+window.onscroll = function () {
+    // get scroll position
+    var scroll = window.scrollY;
+    if (scroll > nav_height) {
+        navtag.classList.add("nav-slider");
+    } else {
+        navtag.classList.remove("nav-slider");
+    }
 }
 
 navbartransition();
