@@ -11,5 +11,3 @@ Navbar needs to be implemented
 
 * about 
 * services
-
-https://preview.colorlib.com/theme/voyage/
