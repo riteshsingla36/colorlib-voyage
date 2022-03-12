@@ -13,4 +13,4 @@ The project work has been divided in the following order
 
 ## Viewing
 
-This project has been hosted on github pages and is available online at [This Link](https://riteshsingla36.github.io/colorlib-voyage/)
+This project has been hosted on github pages and is available online at [This Link](https://colorlib-voyage.netlify.app/)
